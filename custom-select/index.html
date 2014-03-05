@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Custom select for Lowe Profero front end developer test</title>
+    <meta property="keywords" content="custom select,custom forms,select input styling,">
+    <meta property="description" content="This is a custom select element for the Lowe Profero front end developer test">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $("#goto select").change(function(){
+        if ($(this).val()!='') {
+         window.location.href=$(this).val();
+        }
+        });
+        });
+    </script>
+  </head>
+  <body>
+    <h1>Custom select for Lowe Profero front end developer test</h1>
+    <p>Choose a website you want to visit.  </p>
+    <div id="goto" class="cust-select">
+      <select>
+        <option value="" selected="selected">- Choose a site - </option>
+        <option value="http://www.loweprofero.com">Lowe Profero</option>
+        <option value="http://beijing.loweprofero.com">Lowe Profero Beijing</option>
+        <option value="http://upstartpark.com">Upstart Park</option>
+        <option value="http://pbxpolling.upstartpark.com">PBX Poller</option>
+      </select>
+    </div>
+  </body>
+</html>

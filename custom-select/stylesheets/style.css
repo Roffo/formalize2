@@ -1,0 +1,29 @@
+
+
+body {
+  font-family: 'Georgia';
+  background-color: #fff;
+  color: #000;
+}
+.cust-select {
+  padding: 0;
+  margin: 0;
+  border: 1px solid #eee;
+  width: 200px;
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: #ccc url("http://callbackthen.com/arrowdown.gif") no-repeat 99% 50%;
+}
+.cust-select select {
+  padding: 5px 8px;
+  width: 100%;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.cust-select select focus {
+  outline: none;
+}
